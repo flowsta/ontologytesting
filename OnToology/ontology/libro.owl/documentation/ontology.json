@@ -1,0 +1,132 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#isWrittenBy"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This description represents a Writer according to Alba's course on Protégé"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://comicmeta.org/cbo/"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esto es un libro"
+  }, {
+    "@language" : "en",
+    "@value" : "This is a book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Book"
+  }, {
+    "@language" : "es",
+    "@value" : "Libro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book" ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Comic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents a poem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Poem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem" ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer" ],
+  "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#isWrittenBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is written by"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writerName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The name of the writer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "writer name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book"
+  } ]
+}, {
+  "@id" : "https://schema.org/Book",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
