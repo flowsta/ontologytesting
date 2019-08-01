@@ -1,0 +1,40 @@
+{
+  "@context" : {
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Poem" : {
+      "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem"
+    },
+    "Writer" : {
+      "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer"
+    },
+    "Book" : {
+      "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Comic" : {
+      "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Comic"
+    },
+    "writerName" : {
+      "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writerName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "isWrittenBy" : {
+      "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#isWrittenBy",
+      "@type" : "@id"
+    },
+    "writes" : {
+      "@id" : "http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes",
+      "@type" : "@id"
+    }
+  }
+}

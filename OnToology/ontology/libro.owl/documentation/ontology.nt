@@ -1,0 +1,116 @@
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3> <http://www.w3.org/2002/07/owl#imports> <http://comicmeta.org/cbo/> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3> <http://www.w3.org/2000/01/rdf-schema#comment> "This description represents a Writer according to Alba's course on Protégé"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#isWrittenBy
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#isWrittenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#isWrittenBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#isWrittenBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#isWrittenBy> <http://www.w3.org/2000/01/rdf-schema#label> "is written by"@en .
+# 
+# http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writerName
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writerName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writerName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the writer"@en .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writerName> <http://www.w3.org/2000/01/rdf-schema#label> "writer name"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#isWrittenBy> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> <http://www.w3.org/2000/01/rdf-schema#comment> "Esto es un libro"@es .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a book"@en .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> <http://www.w3.org/2000/01/rdf-schema#label> "Book"@en .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> <http://www.w3.org/2000/01/rdf-schema#label> "Libro"@es .
+# 
+# http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Comic
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Comic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Comic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> .
+# 
+# http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a poem"@en .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem> <http://www.w3.org/2000/01/rdf-schema#label> "Poem"@en .
+# 
+# http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> .
+# 
+# https://schema.org/Book
+<https://schema.org/Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book1
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Book> .
+# 
+# http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem1
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem> .
+# 
+# http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer1
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer> .
+<http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Writer1> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#writes> <http://www.semanticweb.org/flow/ontologies/2019/7/untitled-ontology-3#Poem1> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
